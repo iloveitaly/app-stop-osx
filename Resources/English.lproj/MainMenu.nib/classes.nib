@@ -1,0 +1,61 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                decreasePriorityForSelectedApps = id; 
+                increasePriorityForSelectedApps = id; 
+                killSelectedApp = id; 
+                search = id; 
+                selectPausedApps = id; 
+                selectRunningApps = id; 
+                setSearchType = id; 
+                toggleSelectedApp = id; 
+                updateCPU = id; 
+            }; 
+            CLASS = ASAppTableArrayController; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSArrayController; 
+        }, 
+        {
+            ACTIONS = {
+                checkForUpdates = id; 
+                licenseInformation = id; 
+                loadLicense = id; 
+                openAboutWindow = id; 
+                openHelp = id; 
+                openPreferences = id; 
+                openTableView = id; 
+                purchase = id; 
+                purchaseLater = id; 
+            }; 
+            CLASS = ASMainController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                oAppTable = NSTableView; 
+                oDemoInformation = NSTextField; 
+                oMainWindow = NSWindow; 
+                oRegisterNow = NSWindow; 
+                oRegisterNowBuyButton = NSButton; 
+                oRegisterSoon = NSWindow; 
+                oRegisterSoonBuyButton = NSButton; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = DKActionButton; LANGUAGE = ObjC; SUPERCLASS = NSButton; }, 
+        {
+            ACTIONS = {"" = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = NSLevelIndicator; LANGUAGE = ObjC; SUPERCLASS = NSControl; }, 
+        {CLASS = NSSegmentedControl; LANGUAGE = ObjC; SUPERCLASS = NSControl; }, 
+        {
+            ACTIONS = {checkForUpdates = id; }; 
+            CLASS = SUUpdater; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

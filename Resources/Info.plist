@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>appstoplicense</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>license_icon.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>iDictionary License File</string>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>LSTypeIsPackage</key>
+			<false/>
+			<key>NSPersistentStoreTypeKey</key>
+			<string>XML</string>
+		</dict>
+	</array>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIconFile</key>
+	<string>icon.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.prosit-software.appstop</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundleVersion</key>
+	<string>${APP_VERSION}</string>
+	<key>CFBundleGetInfoString</key>
+	<string>${PRODUCT_NAME} ${APP_VERSION}, Copyright © 2006, Prosit Software</string>
+	<key>LSUIElement</key>
+	<string>1</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>SUFeedURL</key>
+	<string>http:/prosit-software.com/rss/appstop.xml</string>
+	<key>SUScheduledCheckInterval</key>
+	<integer>86400</integer>
+	<key>SUCheckAtStartup</key>
+	<true/>
+	<key>CFBundleHelpBookName</key>
+	<string>App Stop Help</string>
+	<key>CFBundleHelpBookFolder</key>
+	<string>App Stop Help</string>
+</dict>
+</plist>

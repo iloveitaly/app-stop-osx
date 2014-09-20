@@ -1,0 +1,132 @@
+V2.2
+-CPU usages values are now expressed in fractional percentages
+-CPU usage values will now always be correctly displayed on intel macs
+-Fixed a bug where faceless (aka 'background') applications could not be paused if 'hide and stop' was enabled
+-New background process update algorithm, updating the background process list is now 3-5x faster
+-Fixed bug where menu shortcuts would not work immediately after App Stop was opened
+-Fixed bug on intel macs where kernel_task would report incorrect CPU usage
+-The Application Manager's name column now uses case insensitive sorting
+-Application Manager's window position will now be remembered
+-You can now specify a default priority setting for any application. This priority setting will be remembered and applied to that application whenever the application launches
+-Fixed Application Manager's table jumping and selection issues
+-When filtering/searching a newly launched applications will no longer appear in the search list (unless it matches what your searching for of course)
+-Improved error reporting on intel macs
+-Reset demo period for all unlicensed copies
+-Lots of minor bug-fixes
+
+V2.1
+-Priority slider now increases priority when moved to the right, and decreases when moved to the left
+-Improved Application Manager UI
+-Updated preferences to look and work more like Safari & Mail.app's preferences
+-When items in the menu-bar list are paused they are now colored red instead of displaying "(Stopped)"
+-Added 'All' filter criteria 
+-Less frequent nagging for demo users (every 2 days)
+-Improved crash/bug reporting (now outputs stack traces and notifies user of exceptions)
+-You can now specify a global shortcut that can be used to bring the Application Manager forward
+-Improved 'hide and stop' reliability
+-Your filter criteria will now be preserved between App Stop startups
+-Totally rewrote the 'startup at login' code
+-Fixed a bug where the menu item would remain in 'paused state' when an application that was paused was killed
+-Major memory usage enhancements 
+-Minor performance enhancements
+
+11/13/06- V2.0
+[FEATURES]
+-App Stop now works on Intel Macs!
+-Added ability to exclude zombie processes from the application manager
+-Added "Update Application List" action
+-Added automatic self-updating using the Sparkle framework
+-Added ability to bring App Stop to the front by cmd+clicking on the menu-item
+-Fully rewritten documentation/help files
+-cmd+F now jumps to the search field in the application manager
+
+[BUGFIXES]
+-Fixed a couple issues with the application filtering/searching mechanism
+-Fixed bug where CPU column sorting would not work correctly
+-Fixed a bunch of memory leaks
+-CPU column will now remain sorted and will not jump to the selected application when the CPU usage is updated
+-Significantly reduced memory usage
+-App Stop will no longer report -1% CPU usage for any application
+-The CPU usage reporting for kernel_task is now correct
+
+[IMPROVEMENTS]
+-Redesigned preference panel
+-Reorganized system-wide drop down menu
+-Replaced buttons on bottom-left side of table with action menu
+-Drastically improved error checking and error reporting
+-Switched from using named pipes for interprocess communication to unnamed pipes (this fixed a couple crashes that were occurring)
+-Improved core communication algorithm. This greatly improves the overall performance of App Stop, some operations (such as CPU usage polling, and background process polling) are 2-5x faster than before!
+-Improved the response and reliability of changing polling related preferences (background process polling, and CPU usage polling)
+
+02/08/11-V1.1
+-Rewrote the cpu usage code, its now much cleaner
+-Force quitting background applications will remove them from the list immediately
+-iTunes-like live searching ability added
+-App Stop is now a universal binary
+-Updated to Xcode 2.2, compiling with the latest GCC release
+
+09/09/05-V1.0
+-Added right click menu to the table view
+-Fixed bug where after the computer goes to sleep, the menu icon will not change to represent if their is a paused application
+-Added option to use a black menu icon set
+-Combined the image & name columns in the table view
+-Rewrote outputting from authnice so integers are directly outputted, instead of being converted back and forth between C strings
+-App Stop now requires that you successfully authorize yourself, or app stop will terminate
+-App Stop is now multi-account safe
+-Added 'App Stop Help' menu item
+-Some UI clean-up/polishing
+-Made a workaround for the weird crashing bug on 10.3, you now have to restart App Stop for preference changes in the 'Background Processes' tab to take effect
+-Greatly improved help/documentation
+
+08/26/05-V1.0b
+-Fixed a bug where applications that should be in the menu bar item's menu, weren't
+-Upgraded AGProcess to .5, which fixed a few small bugs that were occurring
+-Some small speed optimizations
+-I rewrote the background-application update performing, ands its much faster using much less CPU when checking for background-applications
+-Fixed a bug where your selection on the table view would change to the newly added application
+-Totally rewrote the helper application which handled performing actions on root and other applications not running on the current UID.
+This improvement brings the following features and enhancements:
+	-Ability to retrieve CPU usage of other processes running under different UID's than the current UID
+	-Ability to pause/resume processes running under different UID's the current UID
+	-Ability to force quit processes running under different UID's the current UID
+	-Faster performance for renicing applications running under different UID's the current UID
+
+
+07/31/05-V.9
+-Added the much requested support for background applications
+-Added a UID/User-name column to the table-view
+-Fixed problem where the menu icon would be really small on OS X 10.3
+-Fixed a problem where checking for updated while disconnected from the internet would report than a new version is available
+
+07/18/05 -V.8
+-Fixed bug where CPU usage for applications running as root would display incorrectly, now applications running as root will display CPU usage as -1.
+-Added ability to force update CPU usage
+-Added ability to select all running applications
+-Added ability to select all paused applications
+-Rewrote the CPU refresh timer code, now allowing preference changes to be reflected immediately without restarting App Stop
+-Fixed human readable priority representation. Now -20 is represented like it should be, as "Max"
+-Added 'Add to Startup Items' options in the preferences
+-Yet again, I redesigned the preference pane
+-Fixed bad bug which would cause App Stop to crash... alot
+-Added ability to set the table view window to float above all other windows
+-Added option to have an alternate image displayed in the menu bar when applications are paused
+
+22/06/05 -V.7
+-Added optional numeric priority display
+-Added 'Check For Updates...' mechanism
+-Added Application CPU usage display support (Thanks to the AGProcess class!)
+-Reorganized the preference panel
+
+06/22/05 -V.6
+-Fixed bug where stopped applications would prevent your computer from sleeping
+-Support added for sleep/awake/shut-down operations
+-Added preference panel
+-Added hide application before stopping feature
+-Added show application after continue feature
+-Added ability to specify the icon size
+-Added ability to set priority for applications
+-Added authentication for lowering priority on applications
+-Full source code is now available
+
+05/25/05 -V.5 Release
+-Initial release

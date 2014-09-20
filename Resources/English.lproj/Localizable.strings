@@ -1,0 +1,8 @@
+"Communication Error" = "Communication Error";
+"There was an error communicating with a component or App Stop. Check the console log for information pertaining to App Stop and send a bug report." = "There was an error communicating with a component or App Stop. Check the console log for information pertaining to App Stop and send a bug report.";
+"OK" = "OK";
+
+"Application Manager" = "Application Manager…";
+"Check For Updates" = "Check For Updates…";
+"Preferences" = "Preferences…";
+"Load License" = "Load License…";

@@ -1,0 +1,30 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {add = id; clearDefaults = id; remove = id; }; 
+            CLASS = ASPriorityPreferences; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {oPriorityDefaultsTable = NSTableView; }; 
+            SUPERCLASS = NSPreferencesModule; 
+        }, 
+        {
+            ACTIONS = {"" = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {apply = id; cancel = id; ok = id; }; 
+            CLASS = NSPreferences; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = NSPreferencesModule; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {"_preferencesView" = NSBox; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

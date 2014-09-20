@@ -1,0 +1,81 @@
+{
+    IBClasses = (
+        {
+            CLASS = ASAppListController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {oController = NSArrayController; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                decreasePriorityForSelectedApps = id; 
+                increasePriorityForSelectedApps = id; 
+                killSelectedApp = id; 
+                search = id; 
+                setSearchType = id; 
+                toggleSelectedApp = id; 
+            }; 
+            CLASS = ASAppTableArrayController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {oAppManager = NSTableView; oSearchField = NSSearchField; }; 
+            SUPERCLASS = NSArrayController; 
+        }, 
+        {CLASS = ASAppTableView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }, 
+        {
+            ACTIONS = {
+                closeSetPrioritySheet = id; 
+                openSetPrioritySheet = id; 
+                selectPausedApplications = id; 
+                selectRunningApplications = id; 
+                submitPrioritySheet = id; 
+                updateApplicationList = id; 
+                updateCpuAndAppList = id; 
+                updateCpuUsage = id; 
+            }; 
+            CLASS = ASAppWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                oAppTable = NSTableView; 
+                oAppTableActionButton = DKActionButton; 
+                oAppTableWindow = NSWindow; 
+                oMenuAdditions = NSMenu; 
+                oNewPriorityDefault = NSComboBox; 
+                oSetPriorityButton = NSButton; 
+                oSetPriorityWindow = NSWindow; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = ASAuthniceController; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                checkForUpdates = id; 
+                licenseInformation = id; 
+                loadLicense = id; 
+                openAboutWindow = id; 
+                openHelp = id; 
+                openPreferences = id; 
+                openTableView = id; 
+                purchase = id; 
+                purchaseLater = id; 
+            }; 
+            CLASS = ASMainController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                oAppTable = NSTableView; 
+                oDemoInformation = NSTextField; 
+                oGlobalMenu = NSMenu; 
+                oMainWindow = NSWindow; 
+                oRegisterNow = NSWindow; 
+                oRegisterNowBuyButton = NSButton; 
+                oRegisterSoon = NSWindow; 
+                oRegisterSoonBuyButton = NSButton; 
+                oUpdater = SUUpdater; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = DKActionButton; LANGUAGE = ObjC; SUPERCLASS = NSButton; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = NSArrayController; LANGUAGE = ObjC; SUPERCLASS = NSObjectController; }
+    ); 
+    IBVersion = 1; 
+}

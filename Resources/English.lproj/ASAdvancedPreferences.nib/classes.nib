@@ -1,0 +1,23 @@
+{
+    IBClasses = (
+        {
+            CLASS = ASAdvancedPreferences; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSPreferencesModule; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {apply = id; cancel = id; ok = id; }; 
+            CLASS = NSPreferences; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = NSPreferencesModule; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {"_preferencesView" = NSBox; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

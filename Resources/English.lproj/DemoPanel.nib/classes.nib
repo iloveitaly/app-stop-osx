@@ -1,0 +1,31 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                checkForUpdates = id; 
+                licenseInformation = id; 
+                loadLicense = id; 
+                openAboutWindow = id; 
+                openHelp = id; 
+                openPreferences = id; 
+                openTableView = id; 
+                purchase = id; 
+                purchaseLater = id; 
+            }; 
+            CLASS = ASMainController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                oAppTable = NSTableView; 
+                oDemoInformation = NSTextField; 
+                oMainWindow = NSWindow; 
+                oRegisterNow = NSWindow; 
+                oRegisterNowBuyButton = NSButton; 
+                oRegisterSoon = NSWindow; 
+                oRegisterSoonBuyButton = NSButton; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

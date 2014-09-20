@@ -1,0 +1,19 @@
+TODO:
+> V2.1
+	-Add ability to create an exclude list for apps you never want to see in the menu-bar/table
+	
+> V2.2
+	-Red/bold text in the menubar/tableview for highest CPU usage application
+	-Mark the CPU hog in the table view (red/bolded)
+	-Notification when you switch to a application that is paused (cunning fox has this)
+	
+> V2.x - 3.0	
+	-Hot-keys for pausing the current foreground application
+	-NSMenuExtra instead of NSStatusItem
+	-Hidden/Visible column in the table view
+	-Code to detect if an application is stopped (kproc_info->p_xstat)
+	-Select/renice/stop/whatever all background applications
+	-More filtering options (background/foreground processes only)
+	-Save 'profile' of apps priorities and be able to 'run' the priority profile
+	-Pause/Resume apps at a certain time of the day
+	-Hot-keys for pausing resuming application
